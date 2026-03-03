@@ -33,10 +33,12 @@
                 implementationClass="io.github.potjerodekool.nabuintellijplugin.NabuFileType"/>
 
         <!-- Compile task -->
+        <!--
         <compiler.task
             execute="BEFORE"
             implementation="io.github.potjerodekool.nabuintellijplugin.build.NabuCompileTask"
         />
+        -->
     </extensions>
     <extensions defaultExtensionNs="org.jetbrains.kotlin">
         <supportsKotlinPluginMode supportsK2="true" />

@@ -40,23 +40,11 @@ intellijPlatform {
     }
 }
 
-sourceSets {
-    create("jps") {
-        kotlin.srcDir("src/jps/kotlin")
-        compileClasspath += sourceSets["main"].output
-        runtimeClasspath += sourceSets["main"].output
-    }
-}
-
 tasks {
     // Set the JVM compatibility versions
     withType<JavaCompile> {
         sourceCompatibility = "21"
         targetCompatibility = "21"
-    }
-
-    buildPlugin {
-        from(sourceSets["jps"].output)
     }
 }
 
