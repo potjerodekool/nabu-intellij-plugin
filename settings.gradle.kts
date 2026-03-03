@@ -1,0 +1,1 @@
+rootProject.name = "nabu-intellij-plugin"
