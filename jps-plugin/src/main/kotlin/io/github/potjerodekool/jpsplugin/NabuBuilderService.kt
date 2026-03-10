@@ -5,7 +5,7 @@ import org.jetbrains.jps.incremental.ModuleLevelBuilder
 
 class NabuBuilderService : BuilderService() {
 
-    override fun createModuleLevelBuilders(): MutableList<out ModuleLevelBuilder?> {
-        return mutableListOf<ModuleLevelBuilder?>(NabuBuilder())
+    override fun createModuleLevelBuilders(): MutableList<out ModuleLevelBuilder> {
+        return mutableListOf<ModuleLevelBuilder>(NabuBuilder())
     }
 }
